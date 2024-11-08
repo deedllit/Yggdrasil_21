@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "yggdrasil",
+	"version": "${version}",
+	"name": "Yggdrasil Mod",
+	"description": "Yggdrasil Fabric v0.1 !",
+	"authors": [
+		"David Montandon"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/yggdrasil/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.yggdrasil.YggdrasilMod"
+		],
+		"client": [
+			"com.yggdrasil.YggdrasilModClient"
+		],
+		"fabric-datagen": [
+			"com.yggdrasil.YggdrasilModDataGenerator"
+		]
+	},
+	"mixins": [
+		"yggdrasil.mixins.json",
+		{
+			"config": "yggdrasil.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
