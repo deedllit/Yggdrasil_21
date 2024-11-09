@@ -27,7 +27,7 @@ public class BlockInit {
     public static final Block COCO_NUT_PLANKS = registerWithItemCopy("coco_nut_planks",
             Block::new, Blocks.ACACIA_PLANKS, AbstractBlock.Settings::nonOpaque) ;
 
-    
+
 
 
 
