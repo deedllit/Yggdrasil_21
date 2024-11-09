@@ -1,6 +1,0 @@
-{
-  "parent" : "minecraft:item/generated",
-  "textures" : {
-    "layer0" : "yggdrasil:item/muspelheim_ash_carambola_berries"
-  }
-}

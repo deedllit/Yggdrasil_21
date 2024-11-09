@@ -12,7 +12,7 @@ import java.util.Optional;
 public class ItemGroupInit {
     //Creative table
 
-    private static final Text YGGRADSIL_TITLE = Text.translatable("itemGroup." + YggdrasilMod.MOD_ID + ".yggdrasil_group") ;
+    public static final Text YGGRADSIL_TITLE = Text.translatable("itemGroup." + YggdrasilMod.MOD_ID + ".yggdrasil_group") ;
 
     public static final ItemGroup YGGDRASIL_GROUP = register("main", FabricItemGroup.builder()
             .displayName(YGGRADSIL_TITLE)
