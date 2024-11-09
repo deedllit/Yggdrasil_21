@@ -1,5 +1,6 @@
 package com.yggdrasil;
 import com.yggdrasil.init.ItemInit ;
+import com.yggdrasil.init.BlockInit ;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -16,6 +17,8 @@ public class YggdrasilMod implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
 
+		BlockInit.load() ;
+		LOGGER.info("Done Blocks!");
 		ItemInit.load() ;
 		LOGGER.info("Done Items!");
 
